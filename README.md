@@ -76,7 +76,7 @@ To get a local copy up and running, follow these simple steps.
 
 This project was built with ❤️ by:
 
-*   **Adithya S.**
+*   **Adithiya S.**
 *   **Boominathan R.**
 *   **Deva Prakash K.**
 *   **Gokul K.**
