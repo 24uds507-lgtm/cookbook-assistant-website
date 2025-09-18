@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook: Your Virtual Kitchen Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Cookbook</div>
+            <nav>
+                <a href="#">Recipes</a>
+                <a href="#">Meal Planner</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Your Modern Kitchen Assistant</h1>
+                    <p>Discover thousands of recipes, tailored to your taste and the ingredients you already have.</p>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Search for 'Tacos', 'Vegan Pizza'...">
+                        <button id="searchBtn">Find</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?q=80&w=2092" alt="A collection of recipe books and ingredients">
+                </div>
+            </div>
+        </section>
+
+        <section id="assistant-feature">
+            <div class="container">
+                <h2><span class="highlight">What's in your Pantry?</span></h2>
+                <p>Enter ingredients you have (comma separated), and we'll find recipes you can make right now!</p>
+                <div class="pantry-bar">
+                    <input type="text" id="pantryInput" placeholder="e.g., chicken, tomato, cheese">
+                    <button id="pantryBtn">Suggest Recipes</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipe-gallery">
+            <div class="container">
+                <h2>Featured Recipes</h2>
+                <div id="recipe-container" class="recipe-grid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cookbook. Designed with ❤️.</p>
+        </div>
+    </footer>
+
+    <div id="recipe-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Recipe Image">
+            <h2 id="modal-title"></h2>
+            <h3>Ingredients:</h3>
+            <ul id="modal-ingredients"></ul>
+            <h3>Instructions:</h3>
+            <div id="modal-instructions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
